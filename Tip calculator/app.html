@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <h1>Tip Calculator</h1>
+    <div>
+        <form class="needs-validation">
+            <label for="amount">How much was your bill?</label><br>
+            $ <input id="amount" type="number" placeholder="Bill Amount" required>
+            <div class="valid-feedback">Looks good!</div>
+            <br>
+            <label for="service">How was your service?</label><br>
+            <select id="service" required>
+                <option selected disabled>--- Choose an option ---</option>
+                <option value="0.3">30&#37; &#45; Outstanding</option>
+                <option value="0.2">20&#37; &#45; Good</option>
+                <option value="0.15">15&#37; &#45; It was OK</option>
+                <option value="0.1">10&#37; &#45; Bad</option>
+                <option value="0.05">5&#37; &#45; Terrible</option>
+            </select>
+
+            <br>
+            <label for="people">How many people are sharing the bill?</label><br>
+            <input id="people" type="number" placeholder="Number of people" required> people
+
+            <br>
+            <!--type="button prevents form to reload after button onclick"-->
+            <button type="button" id="calculate">CALCULATE!</button>
+        </form>
+        <span id='cost'></span>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
