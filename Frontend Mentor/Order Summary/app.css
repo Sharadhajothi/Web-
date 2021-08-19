@@ -1,0 +1,59 @@
+body{
+    background-image:url("C:/Users/HP/Downloads/order-summary-component-main/order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left bottom;
+    background-size: 100% 53%;
+    background-color: hsl(225, 100%, 94%);
+}
+p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+.card{
+    width: 26rem;
+}
+.card-body{
+    
+    padding:2em;
+
+}
+.container{
+    padding-top: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    
+    
+}
+h5{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: inherit;
+}
+td>button{
+    padding-bottom: 1rem;
+    margin-left: 5rem;
+    text-decoration: underline;
+}
+td>img{
+    padding-left: 0.25rem;
+}
+.buttons {
+   padding-top:1rem; 
+}
+.buttons:nth-of-type(1){
+    padding-bottom: 1rem;
+    color:white;
+    background-color: hsl(245, 75%, 52%);
+}
